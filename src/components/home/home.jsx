@@ -208,7 +208,7 @@ const Dashboard = () => {
       if (150 <= usdtbal) {
         setbalanceStatus(true);
       }
-      if (networkId === 97) {
+      if (networkId === 250) {
         setnetworkStatus(true);
       }
       if (0.002 <= parseFloat(etherValue)) {
@@ -272,15 +272,15 @@ const Dashboard = () => {
     }
 
     const chainParams = {
-      chainId: "0x61",
+      chainId: "0xFA",
       chainName: "Binance Smart Chain Testnet",
       nativeCurrency: {
-        name: "tBNB",
-        symbol: "tBNB",
+        name: "FTM",
+        symbol: "FTM",
         decimals: 18,
       },
-      rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545"],
-      blockExplorerUrls: ["https://testnet.bscscan.com/"],
+      rpcUrls: ["https://rpcapi.fantom.network"],
+      blockExplorerUrls: ["https://ftmscan.com/"],
     };
 
     try {
